@@ -508,7 +508,7 @@ if (len(dl_Alg_ID_LS) > 0) and (len(DL_Model_LS) > 0):
 
             except Exception as e:
                 if VALID_YN is True:
-                    ## 수동 검증 시, Error가 발생할 경우 해당 CSP의 DL모델 Process를 중단함
+                    ## 수동 검증 시, Error가 발생할 경우 해당 Page의 DL모델 Process를 중단함
                     raise Exception(e)
                 else:
                     ## 최종 결과물의 경우, 해당 Page의 예측결과를 제외하고 다음 계정에 대해 진행
