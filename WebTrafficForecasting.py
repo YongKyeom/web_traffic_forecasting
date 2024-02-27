@@ -515,7 +515,7 @@ if (len(dl_Alg_ID_LS) > 0) and (len(DL_Model_LS) > 0):
                     ## DL에서 Error가 발생하여, ARIMA 모델을 대체했음에도 에러가 발생한 경우임
                     logger.error(e)
 
-        ## 최종결과 할당(Ex. Predict_Informer_DF, PredictSummary_Informer_DF, ERROR_INFORMER
+        ## 최종결과 할당(Ex. Predict_Informer_DF, PredictSummary_Informer_DF
         (
             globals()["predictDay_{}_DF".format(DL_TYPE)],
             globals()["predictSummary_{}_DF".format(DL_TYPE)]
